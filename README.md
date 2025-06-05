@@ -55,7 +55,7 @@ Designed as a **personal coding reference**, the notebooks are clean, modular, a
 ## 🔧 Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-code-notebooks.git
+git clone https://github.com/efrat-dev/ai-code-notebooks.git
 cd ai-code-notebooks
 # (Optionally) create and activate a virtual environment
 pip install -r requirements.txt
