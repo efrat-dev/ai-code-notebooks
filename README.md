@@ -14,6 +14,20 @@ Designed as a **personal coding reference**, the notebooks are clean, modular, a
 
 ---
 
+
+## 🌐 Interactive Online Platform
+
+An elegant and user-friendly web interface is available for exploring the notebooks:  
+👉 [**Visit the AI Code Hub** »](https://efrat-dev.github.io/ai-code-notebooks/)
+
+- Search functionality to quickly find relevant content  
+- Open any notebook directly in **Google Colab**, **nbviewer**, or a built-in online viewer  
+- Clean, aesthetic design for comfortable reading and navigation  
+
+Explore the notebooks interactively, run code snippets, and learn with hands-on practice.
+
+---
+
 ## 📂 Structure
 
 - Each notebook focuses on a specific topic, library, or algorithm.
