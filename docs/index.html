@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- index.html - Main HTML structure file
+         Contains the basic HTML structure and meta tags for the AI Knowledge Hub application -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Knowledge Hub - ML/DL/AI Study Materials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+    <link rel="stylesheet" href="css/styles.chttps://efrat-dev.github.io/ai-knowledge-notebooks/docs/css/styles.css">
+</head>
+<body>
+    <!-- Floating particles background -->
+    <div class="floating-particles" id="particles"></div>
+    
+    <!-- GitHub repository link -->
+    <a href="https://github.com/efrat-dev/ai-knowledge-notebooks" target="_blank" class="github-link">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <!-- Status indicator showing connection status -->
+    <div class="status-indicator" id="statusIndicator">
+        <i class="fas fa-circle"></i> <span id="statusText">Connecting...</span>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header section -->
+        <div class="header">
+            <h1><i class="fas fa-brain"></i> AI Knowledge Hub</h1>
+            <p>Comprehensive Study Materials for Artificial Intelligence, Machine Learning & Data Science</p>
+        </div>
+
+        <!-- Search functionality -->
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search topics, algorithms, or concepts..." id="searchBox">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <!-- Loading message -->
+        <div class="loading" id="loadingMessage">
+            <i class="fas fa-spinner"></i>
+            <p>Searching for current data...</p>
+        </div>
+
+        <!-- Statistics cards -->
+        <div class="stats" id="statsContainer" style="display: none;">
+            <div class="stat-card">
+                <div class="stat-number" id="totalFiles">0</div>
+                <div class="stat-label">Notebook Files</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalFolders">0</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="lastUpdate">Latest</div>
+                <div class="stat-label">Status</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="dataSource">Live</div>
+                <div class="stat-label">Data Source</div>
+            </div>
+        </div>
+
+        <!-- Dynamic categories container -->
+        <div class="categories" id="categoriesContainer"></div>
+    </div>
+
+    <!-- Modal for file details -->
+    <div id="fileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent">
+                <h2>Loading file...</h2>
+                <p>Please wait while the file loads from GitHub...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
