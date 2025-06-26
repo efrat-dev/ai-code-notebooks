@@ -1,0 +1,310 @@
+/* variables.css - CSS Custom Properties & Design Tokens - Light Theme
+   Contains all CSS variables, color schemes, gradients, and design system tokens
+   This file should be imported first in your main CSS file
+*/
+
+/* Import advanced fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+/* Advanced global variables */
+:root {
+    /* Advanced gradients */
+    --primary-gradient: linear-gradient(135deg, #2d1b69 0%, #11998e 50%, #38ef7d 100%);
+    --secondary-gradient: linear-gradient(135deg, #8b0040 0%, #4a148c 25%, #1565c0 50%, #00695c 75%, #f57f17 100%);
+    --accent-gradient: linear-gradient(135deg, #1565c0 0%, #00acc1 100%);
+    --neon-gradient: linear-gradient(135deg, #ad1457 0%, #e65100 25%, #00695c 50%, #6a1b9a 75%, #388e3c 100%);
+    --cosmic-gradient: linear-gradient(135deg, #0d1421 0%, #1a237e 24%, #283593 100%);
+    --aurora-gradient: linear-gradient(135deg, #0277bd 0%, #2e7d32 35%, #c62828 70%, #7b1fa2 100%);
+    --matrix-gradient: linear-gradient(135deg, #0f1419 0%, #1a237e 100%);
+    --fire-gradient: linear-gradient(135deg, #bf360c 0%, #e65100 50%, #ff6f00 100%);    --sunset-gradient: linear-gradient(135deg, #ffcc80 0%, #ffe0b2 100%);
+    --ocean-gradient: linear-gradient(135deg, #b3e5fc 0%, #e1f5fe 100%);
+    --forest-gradient: linear-gradient(135deg, #c8e6c9 0%, #e8f5e8 100%);
+    --purple-gradient: linear-gradient(135deg, #e1bee7 0%, #f3e5f5 100%);
+    --pink-gradient: linear-gradient(135deg, #f8bbd9 0%, #fce4ec 100%);
+    --cyber-gradient: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff9c4 100%);
+    --rainbow-gradient: linear-gradient(90deg, #ffcdd2 0%, #ffe0b2 16%, #fff9c4 32%, #dcedc8 48%, #c8e6c9 64%, #b2dfdb 80%, #b3e5fc 100%);
+    --holographic-gradient: conic-gradient(from 90deg at 50% 50%, #ffcdd2 0deg, #ffe0b2 30deg, #fff9c4 60deg, #dcedc8 90deg, #c8e6c9 120deg, #b2dfdb 150deg, #b3e5fc 180deg, #c5cae9 210deg, #d1c4e9 240deg, #f8bbd9 270deg, #ffcdd2 300deg, #ffe0b2 330deg, #ffcdd2 360deg);
+    --mesh-gradient: conic-gradient(from 0deg at 50% 50%, #c5cae9 0deg, #d1c4e9 60deg, #f8bbd9 120deg, #ffcdd2 180deg, #ffe0b2 240deg, #c8e6c9 300deg, #c5cae9 360deg);
+    
+    /* Glassmorphism variables */
+    --glass-bg: rgba(255, 255, 255, 0.3);
+    --glass-bg-hover: rgba(255, 255, 255, 0.5);
+    --glass-bg-active: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-border-hover: rgba(255, 255, 255, 0.8);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    --glass-shadow-hover: 0 15px 35px 0 rgba(0, 0, 0, 0.15);
+    --glass-blur: 16px;
+    --glass-blur-heavy: 24px;
+    
+    /* Advanced shadows */
+    --shadow-neon: 0 0 20px rgba(255, 105, 180, 0.3), 0 0 40px rgba(255, 105, 180, 0.2), 0 0 60px rgba(255, 105, 180, 0.1);
+    --shadow-cyber: 0 0 20px rgba(135, 206, 235, 0.3), 0 0 40px rgba(135, 206, 235, 0.2);
+    --shadow-mega: 0 20px 40px rgba(0, 0, 0, 0.1), 0 40px 80px rgba(0, 0, 0, 0.05);
+    --shadow-glow: 0 0 30px rgba(0, 0, 0, 0.1);
+    --shadow-primary: 0 10px 25px rgba(167, 199, 231, 0.3);
+    --shadow-secondary: 0 10px 25px rgba(255, 126, 179, 0.3);
+    --shadow-accent: 0 10px 25px rgba(135, 206, 235, 0.3);
+    --shadow-fire: 0 0 25px rgba(255, 204, 128, 0.3), 0 0 50px rgba(255, 224, 178, 0.2);
+    --shadow-cosmic: 0 0 30px rgba(230, 243, 255, 0.4), 0 0 60px rgba(209, 231, 221, 0.3);
+    --shadow-aurora: 0 0 25px rgba(179, 229, 252, 0.3), 0 0 50px rgba(200, 230, 201, 0.2);
+    
+    /* Color palette */
+    --primary: #5a9fd4;
+    --primary-light: #87ceeb;
+    --primary-dark: #4682b4;
+    --secondary: #ff7eb3;
+    --secondary-light: #ffb3d1;
+    --secondary-dark: #ff69b4;
+    --accent: #87ceeb;
+    --accent-light: #b0e0e6;
+    --accent-dark: #5f9ea0;
+    --success: #81c784;
+    --warning: #ffb74d;
+    --error: #e57373;
+    --info: #64b5f6;
+    
+    /* Neutral colors */
+    --white: #ffffff;
+    --gray-50: #fafafa;
+    --gray-100: #f5f5f5;
+    --gray-200: #eeeeee;
+    --gray-300: #e0e0e0;
+    --gray-400: #bdbdbd;
+    --gray-500: #9e9e9e;
+    --gray-600: #757575;
+    --gray-700: #616161;
+    --gray-800: #424242;
+    --gray-900: #212121;
+    --black: #000000;
+    
+    /* Typography */
+    --font-orbitron: 'Orbitron', monospace;
+    --font-exo: 'Exo 2', sans-serif;
+    --font-space: 'Space Grotesk', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+    --text-8xl: 6rem;
+    
+    --font-thin: 100;
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
+    
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+    --space-40: 10rem;
+    --space-48: 12rem;
+    --space-56: 14rem;
+    --space-64: 16rem;
+    
+    /* Animation timings */
+    --animation-fast: 0.3s;
+    --animation-medium: 0.6s;
+    --animation-slow: 1s;
+    --animation-ultra-slow: 3s;
+    --animation-lightning: 0.15s;
+    --animation-smooth: 0.4s;
+    
+    /* Easing functions */
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --ease-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+    
+    /* Sizes */
+    --border-radius: 20px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-large: 30px;
+    --border-radius-xl: 40px;
+    --border-radius-full: 9999px;
+    --blur-strength: 20px;
+    --blur-strength-light: 10px;
+    --blur-strength-heavy: 30px;
+    
+    /* Z-index scale */
+    --z-dropdown: 1000;
+    --z-sticky: 1010;
+    --z-fixed: 1020;
+    --z-modal-backdrop: 1030;
+    --z-modal: 1040;
+    --z-popover: 1050;
+    --z-tooltip: 1060;
+    
+    /* Light mode colors */
+    --light-bg: #ffffff;
+    --light-surface: #f8f9fa;
+    --light-border: #e9ecef;
+    --light-text: #212529;
+    --light-text-muted: #6c757d;
+}
+
+/* Advanced animations */
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes rainbow-shift {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes glow-pulse {
+    0%, 100% { 
+        box-shadow: var(--shadow-glow);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: var(--shadow-neon);
+        transform: scale(1.02);
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Utility classes for gradients */
+.bg-primary-gradient { background: var(--primary-gradient); }
+.bg-secondary-gradient { background: var(--secondary-gradient); }
+.bg-accent-gradient { background: var(--accent-gradient); }
+.bg-neon-gradient { background: var(--neon-gradient); }
+.bg-cosmic-gradient { background: var(--cosmic-gradient); }
+.bg-aurora-gradient { background: var(--aurora-gradient); }
+.bg-matrix-gradient { background: var(--matrix-gradient); }
+.bg-fire-gradient { background: var(--fire-gradient); }
+.bg-sunset-gradient { background: var(--sunset-gradient); }
+.bg-ocean-gradient { background: var(--ocean-gradient); }
+.bg-forest-gradient { background: var(--forest-gradient); }
+.bg-purple-gradient { background: var(--purple-gradient); }
+.bg-pink-gradient { background: var(--pink-gradient); }
+.bg-cyber-gradient { background: var(--cyber-gradient); }
+.bg-rainbow-gradient { background: var(--rainbow-gradient); }
+.bg-holographic-gradient { background: var(--holographic-gradient); }
+.bg-mesh-gradient { background: var(--mesh-gradient); }
+
+/* Animated gradients */
+.bg-animated {
+    background: var(--primary-gradient);
+    background-size: 200% 200%;
+    animation: gradient-flow var(--animation-ultra-slow) ease infinite;
+}
+
+.bg-rainbow-animated {
+    background: var(--rainbow-gradient);
+    animation: rainbow-shift var(--animation-ultra-slow) linear infinite;
+}
+
+.bg-holographic-animated {
+    background: var(--holographic-gradient);
+    animation: spin-slow 10s linear infinite;
+}
+
+/* Glassmorphism components */
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: all var(--animation-fast) var(--ease-in-out);
+}
+
+.glass:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-hover);
+    box-shadow: var(--glass-shadow-hover);
+}
+
+.glass-heavy {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur-heavy));
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+/* Glow effects */
+.glow-neon {
+    box-shadow: var(--shadow-neon);
+    animation: glow-pulse var(--animation-slow) ease-in-out infinite;
+}
+
+.glow-cyber {
+    box-shadow: var(--shadow-cyber);
+}
+
+.glow-primary {
+    box-shadow: var(--shadow-primary);
+}
+
+.glow-fire {
+    box-shadow: var(--shadow-fire);
+}
+
+.glow-cosmic {
+    box-shadow: var(--shadow-cosmic);
+}
+
+.glow-aurora {
+    box-shadow: var(--shadow-aurora);
+}
+
+/* Animation utilities */
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+    animation: glow-pulse var(--animation-slow) ease-in-out infinite;
+}
+
+.animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+}
+
+/* Light mode support */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-primary: var(--light-bg);
+        --bg-secondary: var(--light-surface);
+        --border-color: var(--light-border);
+        --text-primary: var(--light-text);
+        --text-secondary: var(--light-text-muted);
+    }
+}
