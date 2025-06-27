@@ -159,8 +159,8 @@ scripts/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/efrat-dev/ai-knowledge-notebooks.git
-   cd ai-knowledge-notebooks
+   git clone https://github.com/efrat-dev/ai-code-notebooks.git
+   cd ai-code-notebooks
    ```
 
 2. **Configure GitHub integration:**
