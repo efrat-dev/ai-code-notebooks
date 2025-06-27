@@ -55,7 +55,7 @@ For comprehensive documentation including:
 - Contributing guidelines
 - Mobile optimization details
 
-**👉 [View Complete Documentation](./docs/DOCUMENTATION.md)**
+**👉 [View Complete Documentation](./DOCUMENTATION.md)**
 
 ## 🤝 Quick Contributing
 
