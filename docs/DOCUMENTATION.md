@@ -175,9 +175,6 @@ scripts/
 Since this project is based on static files (HTML, CSS, and JavaScript),  
 you can easily preview it by right-clicking on `index.html` and selecting: **"Open with Live Server"** 
 
-4. **Access the application:**
-   Open `http://localhost:8000` in your browser
-
 ### Advanced Customization
 
 #### Modifying the Design System
